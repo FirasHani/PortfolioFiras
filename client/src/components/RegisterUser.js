@@ -106,32 +106,7 @@ const onChange =(e)=>{
                   {successMsg}
                 </p>
               )}
-              <div className="w-full flex flex-col lgl:flex-row gap-10">
-                <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Your name
-                  </p>
-                  <input
-                  name="name"
-                  type="text"
-                  onChange={
-                    onChange
-                    
-                  }
-                  value={name.name}
-                  // handleChange={(e)=>setFormData(name)}
-                    className={`${
-                      errMsg === "Username is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
-                 
-                    
-                  
-                  
-                    
-                  />
-                </div>
-              </div>
+
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Email

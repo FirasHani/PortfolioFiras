@@ -6,7 +6,10 @@ const asyncHandler = require('express-async-handler')
 // @route POST/api/createProject
 // @access priveit
 const createProject = asyncHandler(async(req,res)=>{
+    
     const {projectName,projectDescription} = req.body
+    if( req.user.isAdmin == false) return res.status(400).json("user is not admin")
+    
     await project.create({
         projectName,
         projectDescription

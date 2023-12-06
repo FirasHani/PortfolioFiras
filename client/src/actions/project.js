@@ -3,9 +3,9 @@ import * as api from '../api/index'
 
 export const createProject =(project)=>async(dispatch)=>{
     try {
-        const {data}=await api.createProject(project)
+     const {data}=await api.createProject(project)
     
-        dispatch({type: CREATE,payload:data})
+    dispatch({type:CREATE,payload:data})
     
     } catch (error) {
         console.log(error)

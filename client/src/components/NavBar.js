@@ -181,22 +181,45 @@ const CreateProject = () => {
                     </Link>
                   </li>
                 ))}
+                <li>
+                {
+            user?.email==='firas_1767@yahoo.com'?(
+  
+              <button onClick={CreateProject}> CreateProject </button>
+  
+            ):(
+                <p> </p>
+
+            )
+   
+          } 
+                </li>
+                <li>
+                <li className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300">
+            {
+            user?.name?  (
+           <div> welecome:  { user.name}   </div>  
+            ):(
+              <p>
+              
+              </p>
+            )
+           }
+            </li>
+                </li>
+                {
+                user?.name ?  (
+                   
+                  <button onClick={logout} >Logout</button>
+                  ):(
+                    <button onClick={handleClick}> sign in</button>
+                  )
+                 
+                }
               </ul>
               <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
-                  Find me in
-                </h2>
-                <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
-                </div>
+
+   
               </div>
               
               <span

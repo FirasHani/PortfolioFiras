@@ -14,7 +14,7 @@ const ProjectMessage = ({id}) => {
          e.preventDefault()
         dispatch(createMessage(messageForm,id))
          console.log("hi")
-         window.location.reload(true)
+       //  window.location.reload(true)
     }
   return (
     <>

@@ -20,7 +20,7 @@ import Title from './Title'
     <div className="  flex flex-col lgl:flex-row justify-between  ">
     <Body />
    
-            <div className=' w-[500px] h-[680px] pt-[30px]    '>
+            <div className=' w-[400px] lgl:w-[500px] h-[680px] pt-[30px]    '>
             { <img   src={faceID} alt='my face'></img> }  
             </div>
        

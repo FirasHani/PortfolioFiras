@@ -24,9 +24,7 @@ const createMessage=(async(req,res)=>{
 
         })
             
-            await projectModel.create({
-                projectComment:text
-            })
+          
     .then(res.status(200).json('done'))
 
     } catch (error) {

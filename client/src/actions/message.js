@@ -15,7 +15,7 @@ export const showMessage =(id)=>async(dispatch)=>{
 export const createMessage=(messageForm,id)=>async(dispatch)=>{
     try {
         const {data}=await api.createMessage(messageForm,id)
-        console.log(data)
+       // console.log(data)
        dispatch({type:CREATE_MESSAGE,payload:data})
     } catch (error) {
         console.log(error)
